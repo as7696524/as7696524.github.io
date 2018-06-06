@@ -30,7 +30,7 @@
 		}
 		.mark{
 			width: 100px;
-			height: 68px;
+			height: 100%;
 			background-image: url("01/mark(改).jpg");
 			background-position: center;
 			background-size: cover;
@@ -55,11 +55,11 @@
 			background-image: url("01/ig-icon-wh.png");
 		}
 
-		.buttons a:hover{
+		#buttons a:hover{
 		color: #666666;
 		}
 
-		.buttons{
+		#buttons{
 			display: flex;
 			justify-content:space-around;
 			align-items: center;
@@ -68,7 +68,7 @@
 		    margin: 0 auto;
 
          }
-		.buttons a{
+		#buttons a{
 			font-weight: 800;
 			text-decoration: none;
 			font-size:34px;
@@ -137,7 +137,7 @@
 			background-image: url("01/new3.jpg");
 	    }
 	 	.body .dessert{
-	 		margin-top: 30px; 
+	 		margin-top: 5px; 
 	 		font-size:42px;
 			color:#000000;
             text-align:center;
@@ -291,7 +291,7 @@
 				.detail{
 			font-size:14.5px;
 			}
-					.buttons a{
+			#buttons a{
 			font-size:28px;
             }
             .map{			
@@ -315,9 +315,14 @@
 		    .space{
           	width: 5px;
           }
-          	.buttons a{
-			font-size:20px;
+          	#buttons a{
+			font-size:16px;
             }
+            .mark{
+			width: 60px;
+			height: 100%;
+
+		}
 		h3{
 			font-size:45px;
 			font-weight: 500;
@@ -339,7 +344,39 @@
 		.copyright{
 			width: 335px;
 		}
+
+		.navber{
+			width: 100%;
+			height: 60px;
+			background-color: #FFCC66;
+		    border: 1px solid;
+		    position: fixed;
+		}
+		.iconfb{			
+			width: 0px;
+			height: 0px;
+			margin: 0 0 0 0;
+	
+		}
+        .iconig{
+        	width: 0px;
+			height: 0px;
+			margin: 0 0 0 0;
+
+		}
+
 	}
+/* 88888888888888888888888888888888888888888888888888 */
+
+/* 88888888888888888888888888888888888888888888888888 */
+
+
+
+
+
+		
+
+
 
 		@media  screen and (max-width:499px){
  			.detail{
@@ -349,11 +386,11 @@
 		    .space{
           	width: 5px;
           }
-          	.buttons a{
-			font-size:20px;
+          	#buttons a{
+			font-size:10px;
             }
 		h3{
-			font-size:34px;
+			font-size:30px;
 			font-weight: 500;
 		}
 		.contactR .text p{	 		
@@ -378,19 +415,19 @@
           height: 45vw;
           margin: 0 auto;
           }
-          .space{
+         .space{
           	width: 0px;
           }
 		.pic{			
 			width: 60%;
 			height: 45vw;	
 			}
-			.detail{
+		.detail{
 			width: 40%;
 			height: 45vw;
 	 		font-size:13px;
-					}
-         }
+			}
+            }
 
 
 
@@ -405,13 +442,12 @@
 				
 			    <a href="https://www.facebook.com/bakingwork.changhua/" target="_blank"><div class="iconfb"></div></a>
 				<a href="https://www.instagram.com/explore/locations/366824067149148/" target="_blank"><div class="iconig"></div></a>
-				<div class="buttons">
-					<a href="#text1">最新消息</a>
+					<div id="buttons">
+					<a href="#text1"><p>最新消息</p></a>
 					<a href="#text2">產品資訊</a>
 					<a href="#text3">店家資訊</a>
 					<a href="#text4">聯絡我們</a>
 				</div>
-
 			</div>
 			<div class="carousel"></div>
 			<div class="shop"><h3>石原省太郎  泡芙專賣店</h3></div>
